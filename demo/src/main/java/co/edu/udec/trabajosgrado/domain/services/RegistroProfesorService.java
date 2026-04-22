@@ -1,8 +1,9 @@
-package com.unicartagena.services;
+package co.edu.udec.trabajosgrado.domain.services;
 
-import com.unicartagena.models.Profesor;
 import java.util.ArrayList;
 import java.util.List;
+
+import co.edu.udec.trabajosgrado.domain.model.Profesor;
 
 public class RegistroProfesorService {
     private List<Profesor> profesores = new ArrayList<>();

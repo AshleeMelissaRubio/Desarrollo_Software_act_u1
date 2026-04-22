@@ -1,6 +1,7 @@
-import com.unicartagena.models.Estudiante;
-import com.unicartagena.models.TrabajoGrado;
-import com.unicartagena.services.RegistroTrabajoService;
+package co.edu;
+import co.edu.udec.trabajosgrado.domain.model.Estudiante;
+import co.edu.udec.trabajosgrado.domain.model.TrabajoGrado;
+import co.edu.udec.trabajosgrado.domain.services.RegistroTrabajoService;
 
 public class testRegistroTrabajo {
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
-import com.unicartagena.models.Estudiante;
-import com.unicartagena.services.RegistroEstudianteService;
+package co.edu;
+import co.edu.udec.trabajosgrado.domain.model.Estudiante;
+import co.edu.udec.trabajosgrado.domain.services.RegistroEstudianteService;
 
 public class testRegistroEstudiante {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class testRegistroEstudiante {
         Estudiante est1 = new Estudiante("7502420029", "1045236", "Ashlee Melissa Rubio Zapa");
         System.out.println("Intento 1: " + service.registrarEstudiante(est1));
 
-        Estudiante est2 = new Estudiante("7502420029", "999888", "Emerejildo perez");
+        Estudiante est2 = new Estudiante("7502420028", "999888", "Emerejildo perez");
         System.out.println("Intento 2: " + service.registrarEstudiante(est2));
 
         System.out.println("\nAlumnos en el sistema:");

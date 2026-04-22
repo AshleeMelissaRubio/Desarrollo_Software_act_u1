@@ -1,4 +1,4 @@
-package com.unicartagena.models;
+package co.edu.udec.trabajosgrado.domain.model;
 
 public class TrabajoGrado {
     private String numeroOrden;

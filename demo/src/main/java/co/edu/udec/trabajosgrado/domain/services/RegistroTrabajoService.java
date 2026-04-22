@@ -1,8 +1,9 @@
-package com.unicartagena.services;
+package co.edu.udec.trabajosgrado.domain.services;
 
-import com.unicartagena.models.TrabajoGrado;
 import java.util.ArrayList;
 import java.util.List;
+
+import co.edu.udec.trabajosgrado.domain.model.TrabajoGrado;
 
 public class RegistroTrabajoService {
 private List<TrabajoGrado> trabajos = new ArrayList<>();
