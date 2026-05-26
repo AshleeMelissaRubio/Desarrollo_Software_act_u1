@@ -11,17 +11,27 @@ public class Profesor {
         this.address = address;
     }
 
-
-// Getters
-    public String getCedula() { 
+    public String getDni() {
         return dni;
     }
-    
-    public String getNombreCompleto() { 
-        return nombreCompleto; 
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
-    public String getDomicilio() { 
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    public String getAddress() {
         return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
