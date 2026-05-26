@@ -1,7 +1,8 @@
-package com.unicartagena.services;
-import com.unicartagena.models.Estudiante;
+package co.edu.udec.trabajosgrado.domain.services;
 import java.util.ArrayList;
 import java.util.List;
+
+import co.edu.udec.trabajosgrado.domain.model.Estudiante;
 
 public class RegistroEstudianteService {
     private List<Estudiante> estudiantes = new ArrayList<>();

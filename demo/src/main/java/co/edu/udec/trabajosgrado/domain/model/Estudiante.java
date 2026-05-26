@@ -1,13 +1,13 @@
-package com.unicartagena.models;
+package co.edu.udec.trabajosgrado.domain.model;
 
 public class Estudiante {
     private String id;
-    private String cedula;
+    private String dni;
     private String nombreCompleto;
     
-    public Estudiante(String id, String cedula, String nombreCompleto) {
+    public Estudiante(String id, String dni, String nombreCompleto) {
         this.id = id;
-        this.cedula = cedula;
+        this.dni = dni;
         this.nombreCompleto = nombreCompleto;
     }
 
@@ -16,7 +16,7 @@ public class Estudiante {
     }
 
     public String getCedula() { 
-        return cedula; 
+        return dni;
     }
 
     public String getNombreCompleto() {

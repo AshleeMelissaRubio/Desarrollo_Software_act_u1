@@ -1,20 +1,20 @@
-package com.unicartagena.models;
+package co.edu.udec.trabajosgrado.domain.model;
 
 public class Profesor {
-    private String cedula;         // DNI del profesor
+    private String dni;         // DNI del profesor
     private String nombreCompleto; 
-    private String domicilio;      // Dirección de residencia
+    private String address;      // Dirección de residencia
 
-    public Profesor(String cedula, String nombreCompleto, String domicilio) {
-        this.cedula = cedula;
+    public Profesor(String dni, String nombreCompleto, String address) {
+        this.dni = dni;
         this.nombreCompleto = nombreCompleto;
-        this.domicilio = domicilio;
+        this.address = address;
     }
 
 
 // Getters
     public String getCedula() { 
-        return cedula; 
+        return dni;
     }
     
     public String getNombreCompleto() { 
@@ -22,6 +22,6 @@ public class Profesor {
     }
 
     public String getDomicilio() { 
-        return domicilio; 
+        return address;
     }
 }
