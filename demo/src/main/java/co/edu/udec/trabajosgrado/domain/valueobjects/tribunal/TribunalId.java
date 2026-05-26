@@ -1,6 +1,6 @@
 package co.edu.udec.trabajosgrado.domain.valueobjects.tribunal;
 
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidTribunalIdException;
+import co.edu.udec.trabajosgrado.domain.exceptions.tribunal.InvalidTribunalIdException;
 
 import java.util.Objects;
 

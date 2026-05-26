@@ -1,18 +1,17 @@
-package co.edu.udec.trabajosgrado.domain.valueobjects.profesor;
+package co.edu.udec.trabajosgrado.domain.valueobjects.usuario;
 
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidEstudentFullNameException;
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidProfessorFullNameException;
+import co.edu.udec.trabajosgrado.domain.exceptions.user.InvalidUserFullNameException;
 
 import java.util.Objects;
 
-public record ProfesorNombreCompleto(String value) {
+public record UserFullName(String value) {
 
     //atributo
     private static final int MINIMUM_LENGTH = 3;
 
     //constructor
-    public ProfesorNombreCompleto {
-        final String normalizedValue = Objects.requireNonNull(value, "ProfesorNombreCompleto cannot be null").trim();
+    public UserFullName {
+        final String normalizedValue = Objects.requireNonNull(value, "EstudianteNombreCompleto cannot be null").trim();
         validateNotEmpty(normalizedValue);
         validateMinimumLength(normalizedValue);
         value = normalizedValue;
@@ -21,13 +20,13 @@ public record ProfesorNombreCompleto(String value) {
     //métodos
     private static void validateNotEmpty(final String normalizedValue) {
         if (normalizedValue.isEmpty()) {
-            throw InvalidProfessorFullNameException.becauseValueIsEmpty();
+            throw InvalidUserFullNameException.becauseValueIsEmpty();
         }
     }
 
     private static void validateMinimumLength(final String normalizedValue) {
         if (normalizedValue.length() < MINIMUM_LENGTH) {
-            throw InvalidProfessorFullNameException.becauseLengthIsTooShort(MINIMUM_LENGTH);
+            throw InvalidUserFullNameException.becauseLengthIsTooShort(MINIMUM_LENGTH);
         }
     }
 

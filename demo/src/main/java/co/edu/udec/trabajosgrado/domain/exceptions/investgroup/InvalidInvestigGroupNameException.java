@@ -1,6 +1,8 @@
-package co.edu.udec.trabajosgrado.domain.exceptions;
+package co.edu.udec.trabajosgrado.domain.exceptions.investgroup;
 
-public class InvalidInvestigGroupNameException extends DomainException{
+import co.edu.udec.trabajosgrado.domain.exceptions.DomainException;
+
+public class InvalidInvestigGroupNameException extends DomainException {
 
     //atributos
     private static final String MESSAGE_EMPTY = "The professor name must not be empty.";

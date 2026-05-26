@@ -1,6 +1,8 @@
-package co.edu.udec.trabajosgrado.domain.exceptions;
+package co.edu.udec.trabajosgrado.domain.exceptions.tribunal;
 
-public class InvalidTribunalIdException extends DomainException{
+import co.edu.udec.trabajosgrado.domain.exceptions.DomainException;
+
+public class InvalidTribunalIdException extends DomainException {
 
     //atributo
     private static final String MESSAGE_EMPTY = "The tribunal id must not be empty.";

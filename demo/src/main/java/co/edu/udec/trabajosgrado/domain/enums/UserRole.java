@@ -1,11 +1,11 @@
 package co.edu.udec.trabajosgrado.domain.enums;
 
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidUserRoleException;
+import co.edu.udec.trabajosgrado.domain.exceptions.user.InvalidUserRoleException;
 
 public enum UserRole {
     ADMIN,
-    MEMBER,
-    REVIEWER;
+    ESTUDENT,
+    PROFESSOR;
 
     public static UserRole fromString(final String value) {
         for (final UserRole role : values()) {

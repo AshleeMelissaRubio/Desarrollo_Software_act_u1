@@ -1,11 +1,11 @@
 package co.edu.udec.trabajosgrado.domain.model;
 
-import lombok.Value;
+import lombok.Data;
 
-@Value
-public class Profesor {
-    String dni;         // DNI del profesor
-    String nombreCompleto;
-    String address;      // Dirección de residencia
+@Data
+public class Profesor extends User{
+
+    //atributo propio del profesor
+    String address;
 
 }

@@ -1,7 +1,6 @@
 package co.edu.udec.trabajosgrado.domain.valueobjects.grupoinvestigacion;
 
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidEstudentIdException;
-import co.edu.udec.trabajosgrado.domain.exceptions.InvalidInvestigGroupIdException;
+import co.edu.udec.trabajosgrado.domain.exceptions.investgroup.InvalidInvestigGroupIdException;
 
 import java.util.Objects;
 

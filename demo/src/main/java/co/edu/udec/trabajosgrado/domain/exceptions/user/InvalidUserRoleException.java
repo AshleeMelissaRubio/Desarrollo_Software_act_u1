@@ -1,6 +1,8 @@
-package co.edu.udec.trabajosgrado.domain.exceptions;
+package co.edu.udec.trabajosgrado.domain.exceptions.user;
 
-public class InvalidUserRoleException extends DomainException{
+import co.edu.udec.trabajosgrado.domain.exceptions.DomainException;
+
+public class InvalidUserRoleException extends DomainException {
 
     private static final String MESSAGE_INVALID = "The user role '%s' is not valid.";
 
