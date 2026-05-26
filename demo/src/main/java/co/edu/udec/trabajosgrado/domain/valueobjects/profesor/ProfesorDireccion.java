@@ -1,4 +1,4 @@
 package co.edu.udec.trabajosgrado.domain.valueobjects.profesor;
 
-public record ProfesorDomicilio() {
+public record ProfesorDireccion() {
 }
